@@ -1,5 +1,3 @@
-readme_peter.md
-
 # GRANDMA & GRANDPA'S ETF
 
 ## Introduction

@@ -9,7 +9,7 @@ Grandma and Grandpa's ETF is a **user-input based investment portfolio tool** th
 
 The jupyter lab notebook we have developed sets out the steps for a user to input their investment preferences and execute code in a user friendly manner. By compiling various ETF's through an API we have given the user access to the latest trading information across a variety of industries. The final result is the allocation of an ETF based on their goals and a visual dashboard with varying performance metrics.   
 
-*((insert image of dashboard))*
+![](images/daily_prices_etf_vs_top10.png)
 
 ## Background
 Non-technical investors face significant barriers to entry in a rapidly moving investment market. The ability to access and utilise the latest financial information in a way that is catered to your particular needs would seem out of reach to most lay-people. 
@@ -43,8 +43,7 @@ Through the use of a series of questions with proportional weighting, we are abl
 A series of questions were then designed to determine the user's risk tolerance to various industries and invesment generally. The questions are designed to add or subtract a point(s) for the sector/risk to allow a total risk score to be determined.
 
 
-(Pic of user inputs)
-
+![](userinput.gif)
 ---------------
 
 ## Stage Two - ETF API Queries and Allocation,
@@ -54,7 +53,6 @@ To provide an allocation, a large list of ETF's were Queried, cleansed and captu
 1. API sourcing and data extraction
 Several APIs were limited by the number of data pulls per day, others charged money . In the end, FinQuant and [**EOD**](https://eodhistoricaldata.com/) were utilised to query the required data to build a portfolio of ETFs. Once tickers and intial data extracted, the team used called the Historical Prices and Fundamental Financial Data API, to extract further data for analysis.
 
-[Project_images](\https://files.slack.com/files-pri/T01U2EACJ03-F027FTHSVH7/image.png)
 
 2. API data cleansing and data frame merging: Grandma and Grandpa's ETF is designed to not only allocate risk and an appropriate ETF portfolio but show the user simple useable dashboard information to ensure their investment is meeting its objectives.
 Hence key outputs must include:
@@ -89,4 +87,5 @@ D) ETF returns over 10 years
 E) Sunburst of Stock Data
 
 F) ETF holding map data
+
 

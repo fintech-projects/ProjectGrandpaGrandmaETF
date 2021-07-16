@@ -82,10 +82,14 @@ B) ETF holdings by Sector
 
 C) ETF holding by Region
 
-D) ETF returns over 10 years
+D) HQs of Top 10 Holdings
 
-E) Sunburst of Stock Data
+E) ETF returns per period
 
-F) ETF holding map data
+F) Daily Prices - ETF vs Top10 Constituents
+
+G) Sunburst of Stock Data
+
+H) ETF holding map data
 
 ![](images/dash.png)

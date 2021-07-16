@@ -667,6 +667,7 @@ class Functionalities:
         #return ticker
         return ticker
 
+    # retrieve data from eodhistoricaldata
     def get_stock_data(self):
         # period =- d/w/m daily/weekly/monthly
         # from = and to = format is ‘YYYY-MM-DD’
@@ -691,6 +692,7 @@ class Functionalities:
 
         return df
 
+    # sunburst plot for stock prices data 
     def sunburts_ticker_analysis(self):
         ticker = "VTI.US" #get_ticker()
         ## Sunburst
@@ -784,7 +786,7 @@ class Functionalities:
                names='Ticker', title='Top10 Holdings', width=800,
                height=600, color_discrete_sequence=px.colors.sequential.deep)#.show()
 
-
+    #pie plot for sector and weights data 
     def plotPieSectorWeights(self):    
         # Fetch ETF data
         etf_sw_json = requests.get(self.eod_url(self.ticker,"sec_wei",self.eod_api_token)).json()
@@ -809,6 +811,7 @@ class Functionalities:
                title='Holdings by Sector', width=800,
                height=600, color_discrete_sequence=px.colors.sequential.dense)#.show()
     
+    # plot based on regional weights 
     def plotWorldRegionalWeights(self):
         # Fetch ETF data
         ticker = self.get_ticker()
@@ -834,6 +837,7 @@ class Functionalities:
                title='Holdings by World Region', width=800,
                height=600, color_discrete_sequence=px.colors.sequential.matter)#.show()
 
+    # bar plot for returns per period 
     def plotBarReturnsPerPeriod(self):
         etf_data = requests.get(self.eod_url(self.ticker,"perf",self.eod_api_token)).json()
         etf_data
@@ -865,6 +869,7 @@ class Functionalities:
                      color='% Return', width=900, height=500
         )#.show()
     
+    # plot eod data for top 10 tickers 
     def plotEodDataForTop10Ticker(self):
         ### Fetch end of day data for each Top10 Ticker and normalise the data
         #   Initialise vals

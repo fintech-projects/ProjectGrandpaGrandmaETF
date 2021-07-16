@@ -94,5 +94,6 @@ H) ETF holding map data
 
 ![](images/dash.png)
 
-Sunburst stock price data plot 
+<font size="small" color="lightgrey">Sunburst stock price data plot </font>
 <img src="images/sunbursts-stock-price-data.png" alt="sunburst" width="55%" />
+

@@ -43,7 +43,7 @@ Through the use of a series of questions with proportional weighting, we are abl
 A series of questions were then designed to determine the user's risk tolerance to various industries and invesment generally. The questions are designed to add or subtract a point(s) for the sector/risk to allow a total risk score to be determined.
 
 
-![](userinput.gif)
+![](images/userinput.gif)
 ---------------
 
 ## Stage Two - ETF API Queries and Allocation,

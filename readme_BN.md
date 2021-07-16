@@ -94,4 +94,4 @@ H) ETF holding map data
 
 ![](images/dash.png)
 
-<img src="images/sunbursts-stock-price-data.png" alt="drawing" style="width:200px;"/>
+<img src="images/sunbursts-stock-price-data.png" alt="drawing" style="max-width:50%;"/>

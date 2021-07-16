@@ -93,5 +93,3 @@ G) Sunburst of Stock Data
 H) ETF holding map data
 
 ![](images/dash.png)
-
-![](images/sunbursts-stock-price-data.png)

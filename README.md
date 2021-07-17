@@ -97,9 +97,9 @@ H) ETF holding map data
 <font size="small" color="lightgrey">Sunburst stock price data plot </font>
 <img src="images/sunbursts-stock-price-data.png" alt="sunburst" width="55%" />
 ************************
-Files involved are - 
+Files related are - 
 <ul><li>dashboard.ipynb</li>
  <li>functions.py</li>
  <li>map_data.ipynb - input mapping data generated from this file </li>
- <li>OUTPUT SCREENSHOTS - plot pictures are placed in <strong>images folder</strong></li>
+ <li>output screenshots are placed in the <strong>images folder</strong></li>
   </ul>

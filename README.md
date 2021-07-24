@@ -14,16 +14,16 @@ The jupyter lab notebook we have developed sets out the steps for a user to inpu
 ## Background
 Non-technical investors face significant barriers to entry in a rapidly moving investment market. The ability to access and utilise the latest financial information in a way that is catered to your particular needs would seem out of reach to most lay-people. 
 
-A key trading strategy for novice investors is the use of exchange traded funds ([**ETF**](https://www.investopedia.com/terms/e/etf.asp)). ETF's enable users to diversify their risks and maintain a mix of stocks in a particualr industry that has tried and tested performances. 
+A key trading strategy for novice investors is the use of exchange traded funds ([**ETF**](https://www.investopedia.com/terms/e/etf.asp)). ETF's enable users to diversify their risks and maintain a mix of stocks in a particular industry that has tried and tested performance. 
 
-Picking the right ETF can be tricky,  hence our model is designed to provide an end state performance dashboard using code and visualisations of financial data to simplify the process. The analysis looks at investments types and industries to create a risk profile, which in turn matches the user to a suitable ETF strategy.
+Picking the right ETF can be tricky, hence our model is designed to provide an end-state performance dashboard using code and visualisations of financial data to simplify the process. The analysis looks at investments types and industries to create a risk profile, which in turn matches the user to a suitable ETF strategy.
 
 ## MVP
-Initially it was proposed to build a tool that could assess multiple ETF's and provide summary statistics and results across various portfolios. Given the time restratints, this was beyond the scope and resources available. 
+Initially it was proposed to build a tool that could assess multiple ETF's and provide summary statistics and results across various portfolios. Given the time restraints, this was beyond the scope and resources available. 
 
 Our MVP as presented below focuses on one ETF output and capturing relevant risk information from the user, and defining the optimal ETF to match:
 
-1. Capture user input data and generate users risk profile and investment preferences
+1. Capture user input data and generate a user's risk profile and investment preferences
 2. Draw down API ETF information to provide a library of ETF products
 3. Match the risk profile and investment preferences to the most suitable ETF
 4. Create and calculate a summary of ETF data
@@ -34,13 +34,13 @@ Our MVP as presented below focuses on one ETF output and capturing relevant risk
  
 ## Stage One - Grandma & Grandpa's Inputs: Investment and Risk Profile
 
- To enable the allocationn of a personalised ETF, user inputs were created using widgets to allow for the selction of data and answering of specific fields.   
+ To enable the allocationn of a personalised ETF, user inputs were created using widgets to allow for the selection of data and answering of specific fields.   
 
-1. User interface and data capture:
-Through the use of a series of questions with proportional weighting, we are able to capture the user's prevailing attitude to differing sectors and leanings to investment areas. Answers are based on a scale of importance that the user selects - "not important" to "very important"
+1. User interface and data capture:  
+Through the use of a series of questions with proportional weighting, we are able to capture the user's prevailing attitude to differing sectors and 'leanings' to areas of investment. Answers are based on a scale of importance that the user selects - "not important" to "very important"
 
-2. Risk allocation:
-A series of questions were then designed to determine the user's risk tolerance to various industries and invesment generally. The questions are designed to add or subtract a point(s) for the sector/risk to allow a total risk score to be determined.
+2. Risk allocation:  
+A series of questions were then designed to determine the user's risk tolerance to various industries, and investment generally. The questions are designed to add or subtract a point(s) for the sector/risk to allow a total risk score to be determined.
 
 
 ![](images/userinput.gif)
@@ -48,14 +48,15 @@ A series of questions were then designed to determine the user's risk tolerance 
 
 ## Stage Two - ETF API Queries and Allocation,
  
-To provide an allocation, a large list of ETF's were Queried, cleansed and captured in two stages:
+To provide an allocation, a large list of ETF's were queried, cleansed and captured in two stages:
 
-1. API sourcing and data extraction
-Several APIs were limited by the number of data pulls per day, others charged money . In the end, FinQuant and [**EOD**](https://eodhistoricaldata.com/) were utilised to query the required data to build a portfolio of ETFs. Once tickers and intial data extracted, the team used called the Historical Prices and Fundamental Financial Data API, to extract further data for analysis.
+1. API sourcing and data extraction:  
+Several APIs were limited by the number of data pulls per day, others had subscription fees. In the end, FinQuant and [**EOD**](https://eodhistoricaldata.com/) were utilised to query the required data to build a portfolio of ETFs. Once tickers and initial data extracted, the team used Historical Prices and Fundamental Financial Data API, to extract further data for analysis.
 
 
-2. API data cleansing and data frame merging: Grandma and Grandpa's ETF is designed to not only allocate risk and an appropriate ETF portfolio but show the user simple useable dashboard information to ensure their investment is meeting its objectives.
-Hence key outputs must include:
+2. API data cleansing and data frame merging:  
+Grandma and Grandpa's ETF is designed to not only allocate risk and an appropriate ETF portfolio but show the user simple dashboard information to ensure their investment is meeting its objectives.
+Hence key outputs must include:  
 
     A. Return - Annual returns by ETF for past 5 years (looking back 5 years)
 
@@ -67,12 +68,11 @@ Hence key outputs must include:
 
     E. Market health indicators - S&P 500 current state, etc
 
-
 --------------
 
 ## Stage Three - Dashboard Performance Tracker
 
-A dashboard is a summary for user to understand the past, current and future state of their investment. The allocated ETF is displayed via the dashboard and shows a variety of performance metrics so that the user may easily visualise the full spectrum analysis of their portfolio.
+A dashboard is a summary for the user to understand the past, current and future state of their investment. The allocated ETF is displayed via the dashboard and shows a variety of performance metrics, so that the user may easily visualise the analysis of their portfolio.
 
 The dashboard shows the user:
 
@@ -94,9 +94,12 @@ H) ETF holding map data
 
 ![](images/dash.png)
 
-<font size="small" color="lightgrey">Sunburst stock price data plot </font>
 <img src="images/sunbursts-stock-price-data.png" alt="sunburst" width="55%" />
-************************
+
+<font size="small" color="lightgrey">Sunburst stock price data plot</font>
+
+----  
+
 Files related are - 
 <ul><li>dashboard.ipynb</li>
  <li>functions.py</li>
